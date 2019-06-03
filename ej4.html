@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ej. 4. Estructuras y condicionales</title>
+        <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+    <nav>
+      <div class="contenedor">
+        <header>
+          <img class="logo-left" src="imagenes/Logo-tecnm.png">
+          <img class="logo-right" src="imagenes/logo-ittux.png" alt="Logotipo de sistemas">
+        </header>
+        <section>
+    <body>
+      <center>
+      <p>EJERCICIO 4</p>
+    </center>
+    <p>Ejercicio 4. Elabore un script que solicite el nombre de la persona y el tiempo que esta aguanta sumergida en el agua,
+      posteriormente muestre un mensaje con su nombre indicando como esta catalogado, tomando en cuenta lo siguiente</p>
+      <ul>
+        <li>
+          <p>Si aguanta sumergido en el agua un minuto es NORMAL</p>
+        </li>
+        <ul>
+          <li>
+            <p>Si aguanta menos de un minuto eres una persona con ASMA</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Si aguanta mas de dos minutos eres AQUAMAN</p>
+          </li>
+        </ul>
+
+
+
+      <script type="text/javascript">
+        var nombre, tiempo;
+
+        nombre=prompt("¿Cuál es tu nombre?", " ");
+        tiempo=prompt("¿Cuánto agunatas sumergido en el agua"," ");
+
+        if(tiempo==1)
+        {
+            document.write('<br>');
+          document.write(nombre + " Éres una persona NORMAL");
+  document.write('<br>');
+          document.write('<img src="imagenes/normal.jpg" width="450"  height="300" align="center" imagen.align="middle">');
+        }
+
+        else if(tiempo<=2)
+        {
+          document.write(nombre + " Éres una persona con ASMA");
+            document.write('<br>');
+              document.write('<img src="imagenes/asma.jpg"  width="400"  height="300" align="center" imagen.align="middle">');
+        }
+        else
+        {
+            document.write('<br>');
+          document.write(nombre + " Éres ACUAMAN");
+              document.write('<img  src="imagenes/aquaman.jpg"  width="550"  height="400" align="center" imagen.align="middle">');
+        }
+
+      </script>
+      <footer>
+      <ul>
+
+          <li><a class="boton redondo azul" href="inicio.html">Inicio</a></li>
+      <li><a class="boton redondo azul" href="ej1.html">Ejercicio 1</a></li>
+      <li><a class="boton redondo azul" href="ej2.html">Ejercicio 2</a></li>
+      <li><a class="boton redondo azul" href="ej3.html">Ejercicio 3</a></li>
+      <li><a class="boton redondo azul" href="ej5.html">Ejercicio 5</a></li>
+      <li><a class="boton redondo azul" href="ej6.html">Ejercicio 6</a></li>
+      <li><a class="boton redondo azul" href="ej7.html">Ejercicio 7</a></li>
+          <li><a class="boton redondo azul" href="eje8.html">Ejercicio 8</a></li>
+      </ul>
+      </nav>
+    </footer>
+</div>
+  </body>
+</html>

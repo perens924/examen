@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+<title>Factorial</title>
+  <link rel="stylesheet" href="css/estilo12.css">
+</head>
+<p>Elabore un script que pida 2 numeros y los multiplique por medio de sumas sucesivas.</p>
+<ol>
+<li>
+  <p>Pida dos numeros</p>
+</li>
+
+<li>
+  <p>Haga la multiplicacion por medio de sumas sucesivas</p>
+</li>
+</ol>
+<script type="text/javascript">
+var numero = prompt("Introduce un número entero para calcular su factorial");
+var numero2 = prompt("Introduce un número 2 entero para calcular su factorial");
+var resultado = 1;
+var resultado2 = 1;
+
+    for(var i=1; i<=numero; i++) {
+        resultado *= i;
+    }
+      alert(resultado, resultado);
+
+    for(var i=1; i<=numero2; i++) {
+        resultado2 *= i;
+    }
+    alert(resultado, resultado2);
+
+      document.write(" El  factorial del numero es: " + resultado +'<br>');
+
+      document.write(" El  factorial del numero 2 es: " + resultado2);
+</script>
+
+
+
+</html>

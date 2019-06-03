@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercico 11</title>
+  </head>
+  <body>
+    <p> El un estadio se tienen 5 diferentes tipos de localidades las cuales se identifican por una
+clave numerica que es un valor comprendio entee uno y 5.
+contruya un script que </p>
+<ol>
+  <li>
+  <p> a)lea los precios</p>
+  </li>
+  <li>
+    <p>a)lea los datos de las ventas de boletos</p>
+  </li>
+  <li>
+    <p>c)imprima para cada venta la clave, la cantidad y el importe total de los boletos vendidos en esa venta</p>
+  </li>
+  <li>
+    <p>d)calcule e imprima la cantidad de boletos vendidos de cada tipo</p>
+  </li>
+  <li>
+    <p>e)calcule e imprima la recaudacion total del estadio.</p>
+  </li>
+</ol>
+<script type="text/javascript">
+var precio1, precio2, precio3, precio4, precio5, l1, l2, l3, l4, l5, clave, cantidad, total_rec, opc;
+
+precio1=parseInt(precio1=prompt('El precio de los boletos de la localidad 1 es:', ''));
+precio2=parseInt(precio2=prompt('El precio de los boletos de la localidad 2 es:', ''));
+precio3=parseInt(precio3=prompt('El precio de los boletos de la localidad 3 es:', ''));
+precio4=parseInt(precio4=prompt('El precio de los boletos de la localidad 4 es:', ''));
+precio5=parseInt(precio5=prompt('El precio de los boletos de la localidad 4 es:', ''));
+
+clave=parseInt(clave=prompt('La clave de la venta es:', ''));
+cantidad=parseInt(cantidad=prompt('La cantidad de boletos que se comprarán es:', ''));
+opc=prompt('¿Qué localidad desea?'+' \n1. localidad 1  \n2. localidad 2  \n3. localidad 3 \n4. localidad 4  \n5. localidad 5');
+opc=parseInt(opc);
+switch (opc)
+{
+  case 1:
+  document.write(" El  numero de boletos de la localidad es: " + cantidad);
+  document.write(" El total  en esta compra es: " + (precio1*cantidad));
+  break;
+
+  case 2:
+  document.write(" El  numero de boletos de la localidad es: " + cantidad);
+  document.write(" El total  en esta compra es: " + (precio2*cantidad));
+  break;
+
+  case 3:
+  document.write(" El  numero de boletos de la localidad es: " + cantidad);
+  document.write(" El total  en esta compra es: " + (precio3*cantidad));
+  break;
+  case 4:
+  document.write(" El  numero de boletos de la localidad es: " + cantidad);
+  document.write(" El total  en esta compra es: " + (precio4*cantidad));
+  break;
+  case 5:
+  document.write(" El  numero de boletos de la localidad es: " + cantidad);
+  document.write(" El total  en esta compra es: " + (precio5*cantidad));
+  break;
+
+}
+while (clave !=-1 && cantidad!=-1);
+ {
+document.write("La cantidad total de boletos comprados en la localidad 1 es:: " + l1);
+document.write("La cantidad total de boletos comprados en la localidad 2 es:: " + l2);
+document.write("La cantidad total de boletos comprados en la localidad 3 es:: " + l3);
+document.write("La cantidad total de boletos comprados en la localidad 4 es:: " + l4);
+document.write("La cantidad total de boletos comprados en la localidad 5 es:: " + l5);
+
+total_rec=(l1*precio1)+(l2*precio2)+(l3*precio3)+(l4*precio4)+(l5*precio5);
+document.write("La recaudacion total de las  ventas es:: " + total_rec;
+}
+
+</scsript>
+  </body>
+</html>

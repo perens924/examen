@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 5. Nivel de desempeño</title>
+    <link rel="stylesheet" href="css/estilo1.css">
+  </head>
+  <body>
+    <nav>
+    <div class="contenedor">
+        <header>
+          <img class="logo-left" src="imagenes/Logo-tecnm.png">
+          <img class="logo-right" src="imagenes/logo-ittux.png" alt="Logotipo de sistemas">
+        </header>
+        <section>
+    <body>
+      <center>
+      <p>EJERCICIO 5</p>
+    </center>
+    <p>Elabore un script que solicite el nombre de un alumno y 5 calificaciones, para determinar cual es su promedio y
+    nivel de desempeño en la clase de Programacion Web.  Para determinar el nivel de desempeño deberá basarse en la
+       siguiente información:</p>
+
+       <ol>
+         <li>
+           <p>Promedio menor o igual a 60: “Desempeño Insuficiente”</p>
+         </li>
+         <li>
+           <p>Promedio igual a 70 pero menor que 80: “Desempeño Suficiente”</p>
+         </li>
+         <li>
+           <p>Promedio igual a 80 pero menor que 90: “Desempeño Bueno”</p>
+         </li>
+         <li>
+           <p>Promedio igual a 90 pero menor que 100: “Desempeño Notable”</p>
+         </li>
+         <li>
+           <p>Promedio igual a 100: “Desempeño Excelente” </p>
+         </li>
+       </ol>
+
+    <script type="text/javascript">
+      var nombre, cal1, cal2, cal3, cal4, cal5, promedio;
+
+      nombre=prompt('¿Cuál es su nombre?', '');
+      cal1=parseInt(cal1=prompt('Calificacion 1:', ''));
+      cal2=parseInt(cal2=prompt('Calificacion 2:', ''));
+      cal3=parseInt(cal3=prompt('Calificacion 3:', ''));
+      cal4=parseInt(cal4=prompt('Calificacion 4:', ''));
+      cal5=parseInt(cal5=prompt('Calificacion 5:', ''));
+
+
+      promedio=(cal1+cal2+cal3+cal4+cal5)/5;
+
+      if (promedio<=60)
+      {
+        document.write(' Desempeño Insuficiente ');
+          document.write('<br>');
+          document.write('<br>');
+        document.write('<img class src="imagenes/insuficiente.jpg" width="450"  height="300" align="center" imagen.align="middle">');
+      }
+      else if (promedio<=70){
+        document.write(' Desempeño Suficiente ');
+          document.write('<br>');
+          document.write('<br>');
+        document.write('<img class src="imagenes/suficiente.png" width="450"  height="300" align="center" imagen.align="middle">');
+      }
+      else if (promedio<=80){
+        document.write(' Desempeño Bueno ');
+          document.write('<br>');
+          document.write('<br>');
+        document.write('<img class src="imagenes/bueno.jpg" width="650"  height="300" align="center" imagen.align="middle">');
+      }
+      else if (promedio<=90){
+        document.write(' Desempeño Notable ');
+          document.write('<br>');
+          document.write('<br>');
+        document.write('<img class src="imagenes/notable.jpg" width="450"  height="300" align="center" imagen.align="middle">');
+      }
+      else if (promedio=100){
+        document.write(' Desempeño Excelente ');
+          document.write('<br>');
+          document.write('<br>');
+        document.write('<img class src="imagenes/notaexcelente.jpg" width="450"  height="400" align="center" imagen.align="middle">');
+      }
+
+    </script>
+    <footer>
+    <ul>
+
+        <li><a class="boton redondo azul" href="inicio.html">Inicio</a></li>
+    <li><a class="boton redondo azul" href="ej1.html">Ejercicio 1</a></li>
+    <li><a class="boton redondo azul" href="ej2.html">Ejercicio 2</a></li>
+    <li><a class="boton redondo azul" href="ej3.html">Ejercicio 3</a></li>
+    <li><a class="boton redondo azul" href="ej4.html">Ejercicio 4</a></li>
+    <li><a class="boton redondo azul" href="ej6.html">Ejercicio 6</a></li>
+    <li><a class="boton redondo azul" href="ej7.html">Ejercicio 7</a></li>
+        <li><a class="boton redondo azul" href="eje8.html">Ejercicio 8</a></li>
+    </ul>
+    </nav>
+  </footer>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title>Ejercicio 7. Cálculo de áreas empleando Switch</title>
+    <link rel="stylesheet" href="css/estiloprincipal.css">
+  </head>
+  <body>
+    <div class="contenedor">
+      <header>
+        <img class="logo-left" src="imagenes/Logo-tecnm.png">
+        <img class="logo-right" src="imagenes/logo-ittux.png" alt="Logotipo de sistemas">
+      </header>
+      <section>
+  <body>
+    <center>
+    <p>EJERCICIO 7</p>
+  </center>
+  <body>
+    <p>Script para calcular el área de las siguientes figuras</p>
+    <ol>
+      <li>Triángulos</li>
+            <li>Cuadrados</li>
+      <li>Rectángulo</li>
+      <li>Trapecio</li>
+          <li>Círculo</li>
+    </ol>
+    <script type="text/javascript">
+      var area, opc, base, altura, lado,  basema, radio, diametro;
+      opc=prompt('¿Qué area desea calcular?'+' \n1. Triangulo  \n2. cuadrado  \n3. Rectangulo  \n4. Trapecio  \n5. Circulo');
+      opc=parseInt(opc);
+      switch(opc){
+        case 1:
+          base=parseInt(base=prompt('Base  del Triangulo:', ''));
+          altura=parseInt(altura=prompt('altura  del Triangulo:', ''));
+          area=base*altura/2;
+          document.write(" El area del triangulo es: " + area);
+            document.write('<img class src="imagenes/triangulo.png" width="500"  height="300" align="center" imagen.align="middle">');
+      break;
+      case 2:
+        lado=parseInt(lado=prompt('  El lado del cuadrado es:', ''));
+        area=lado*lado;
+        document.write(" El area del cuadrado es: " + area);
+          document.write('<img class src="imagenes/cuadrado.png" width="500"  height="300" align="center" imagen.align="middle">');
+    break;
+    case 3:
+      base=parseInt(base=prompt('Base  del rectangulo:', ''));
+      altura=parseInt(altura=prompt('altura  del rectangulo:', ''));
+      area=base*altura;
+      document.write(" El area del rectangulo es: " + area);
+      document.write('<img class src="imagenes/rectangulo.jpg" width="500"  height="300" align="center" imagen.align="middle">');
+  break;
+  case 4:
+    base=parseInt(base=prompt('Base  del Trapecio:', ''));
+      basema=parseInt(base=prompt('Base  del Trapecio:', ''));
+        altura=parseInt(altura=prompt('altura  del Trapecio:', ''));
+    area=(basema+basemen/2)*(h);
+    document.write(" El area del trapecio es: " + area);
+    document.write('<img class src="imagenes/trapecio.jpg" width="500"  height="300" align="center" imagen.align="middle">');
+break;
+
+case 5:
+  radio=parseInt(base=prompt('Ingresa el radio del Circulo:', ''));
+  area=(3.1426*radio)^(2);
+  document.write(" El area del círculo es: " + area);
+  document.write('<img class src="imagenes/circulo.png" width="500"  height="300" align="center" imagen.align="middle">');
+break;
+default:
+      }
+    </script>
+    <footer>
+    <ul>
+        <li><a class="boton redondo azul" href="inicio.html">Inicio</a></li>
+    <li><a class="boton redondo azul" href="ej1.html">Ejercicio 1</a></li>
+    <li><a class="boton redondo azul" href="ej2.html">Ejercicio 2</a></li>
+    <li><a class="boton redondo azul" href="ej3.html">Ejercicio 3</a></li>
+    <li><a class="boton redondo azul" href="ej4.html">Ejercicio 4</a></li>
+    <li><a class="boton redondo azul" href="ej5.html">Ejercicio 5</a></li>
+    <li><a class="boton redondo azul" href="ej6.html">Ejercicio 6</a></li>
+        <li><a class="boton redondo azul" href="eje8.html">Ejercicio 8</a></li>
+    </ul>
+    </nav>
+    </footer>
+  </body>
+</html>

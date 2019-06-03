@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ejercio 9. sucecion de ulam</title>
+  </head>
+  <body>
+<p>realiza un scrip QUe lea UN NUMERO ENTERO POSITIVO Y OBTENGA IMPRIMA LA SUCESION DE ULAN.
+  SE LLAMA SUCESION DE ULAN EN HONOR DEL MATEMATICO S. ULAN.</p>
+
+  <p>A)COMIENZA CON CUALQUIER NUMERO ENTERO POSITIVO</p>
+  <p>B)SI ES PAR, DIVIDALO ENTRE DOS, SI ES IMPAR MULPTIPLIQUELO POR 3 Y AGREGUELE 1</p>
+  <p>C)OBTENGA ENTERO SUCESIVAMENTE REPITIENDO EL PROCESO</p>
+  <p>que muestre los primeros 100 numeros de ulan</p>
+
+
+<script type="text/javascript">
+  var y;
+  y=prompt('Ingresa un numero entero positivo:', '');
+
+  while (y!=1) {
+  if (y%2==0) {
+       y=y/2;
+    }
+    else {
+      y=(y*3)+1;
+    }
+         document.write('<li type="1">'+y+ ' <br>');
+  }
+</script>
+  </body>
+</html>
